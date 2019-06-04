@@ -1,0 +1,62 @@
+/* logo text */
+.logotext {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 35%;
+}
+/* text annonce trouvez votre */
+.trouvez {
+	margin-top: 27px;
+	font-size: 20px;
+}
+
+/* carte transparent */
+.card-block {
+	background-color: rgba(245, 245, 245, 0.4);
+	height: 250px;
+	width: 90vw;
+	margin-top: 2px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 4px;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+.formulaire {
+	margin-top: 10px;
+}
+
+.fond {
+	width: 100%;
+}
+
+.background {
+	border: 1px solid black;
+}
+
+.jumbotron {
+	background-image: url("../images/destinations/fondok.jpeg");
+	background-size: cover;
+	text-align: center;
+	height: 600px;
+}
+
+.cardphotos {
+	background-color: rgba(245, 245, 245, 0.4);
+	height: 100px;
+	width: 30vw;
+}
+
+.destinationcards {
+	border: 1px solid black;
+}
+
+.card-img-top {
+	width: 25vw;
+}
