@@ -68,29 +68,13 @@ class Destination
         $this->idTourOperator = $idTourOperator;
     }
 
-    public function setCard(TourOperator $operator, $locationName, $locationImage)
+    public function shortDescription()
     {
+        $description = substr($this->description(), 0, 300);
+        if (strlen($this->description()) >= 300) {
+            $description .= '...';
+        }
 
-        /*
-        $operator->name(), $operator->grade(), $operator->logo()
-        $locationName, $locationImage
-        $this->price(), $this->description()
-
-        star, star_border, star_half
-        */
-
-        echo '<div class="row">
-                <div class="col-3">
-                    <img src="../assets/images/destinations/baleare.jpg" width="200px">
-                </div>
-                <div class="col-3">
-                ' . $operator->name() . $locationName . '
-                </div>
-                <div class="col-3">
-                    <i class="material-icons">star</i>
-                    <i class="material-icons">star_half</i>
-                    <i class="material-icons">star_border</i>
-                </div>
-            </div>';
+        return $description;
     }
 }

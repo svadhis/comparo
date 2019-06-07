@@ -13,42 +13,33 @@
 </head>
 
 <body>
+    <div class="container">
+        <?php
 
-    <?php
+        include '../partials/scripts/set-manager.php';
+        include '../partials/layout/navbar.php';
 
-    include '../partials/scripts/set-manager.php';
-    include '../partials/layout/navbar.php';
+        ?>
 
-    // Create all operator objects
-    $operators = Manager::getAllOperators();
+        <div class="gris-clair">
 
-    foreach ($operators as $operator) {
-        $tourOperator = 'operator' . $operator['id'];
-        $$tourOperator = new TourOperator($operator);
-    }
+            <?php Ifc::setDestinationsPage(); ?>
 
-    // Create location variables
+        </div>
 
-    $locationName = Manager::getLocationByDestination($_GET['location']);
-    $imageConv = iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $locationName);
-    $locationImage = '../assets/images/destinations/' . $imageConv . '.jpg';
-
-    // Create all destinations objects
-    $destinationsByLocation = Manager::getOperatorsByDestination($_GET['location']);
-
-    foreach ($destinationsByLocation as $destination) {
-        $destination = new Destination($destination);
-        // Set operator object name, and set card for all destinations
-        $operator = 'operator' . $destination->idTourOperator();
-        $destination->setCard($$operator, $locationName, $locationImage);
-    }
-
-    ?>
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Fetch review script -->
+    <script src="../assets/js/submit-review.js"></script>
+
+    <!-- Submit grade script -->
+    <script src="../assets/js/submit-grade.js"></script>
+
 </body>
 
 </html>

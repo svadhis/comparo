@@ -5,6 +5,7 @@ class TourOperator
     private $id;
     private $name;
     private $logo;
+    private $gradeCount;
     private $grade;
     private $link;
     private $isPremium;
@@ -35,6 +36,11 @@ class TourOperator
         return $this->logo;
     }
 
+    public function gradeCount()
+    {
+        return $this->gradeCount;
+    }
+
     public function grade()
     {
         return $this->grade;
@@ -63,6 +69,11 @@ class TourOperator
     public function setlogo($logo)
     {
         $this->logo = $logo;
+    }
+
+    public function setGradeCount($gradeCount)
+    {
+        $this->gradeCount = $gradeCount;
     }
 
     public function setGrade($grade)

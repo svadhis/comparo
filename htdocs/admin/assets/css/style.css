@@ -1,0 +1,66 @@
+/* roboto condensed et roboto classique */
+/* deanimation   ------------------------------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* fin animation   ------------------------------------------------------------------ */
+
+h3 {
+	font-family: 'Cantarell', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.logotext {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 20%;
+}
+
+/* bouton valider pour la page destinations */
+.rajoutdestination {
+	background-color: rgb(131, 178, 182);
+	margin-top: 60px;
+	:focus: ;
+}
+
+.buttoncustom {
+	margin-left: 680px;
+}
+
+.fondcouleur {
+	background-color: #87b4b8;
+}
+
+/* container */
+.container-fluid {
+	background: rgb(131, 178, 182);
+	height: 300px;
+	width: 800px;
+	padding: 30px;
+	margin: auto;
+}
+
+.ligneblanche col-8 center {
+	background: white;
+	height: 50px;
+	width: 600px;
+}
+.boutonadministrateur {
+	margin: 100px;
+}
+
+.black {
+	color: black;
+}
+
+.operatorcards {
+	height: 300px;
+	box-shadow: 10px 10px 8px #888888;
+}
+
+.prixbouton {
+	width: 50px;
+}
