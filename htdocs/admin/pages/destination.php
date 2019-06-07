@@ -45,7 +45,7 @@
     </div>
 
     <!-- choix de container-->
-    <div class="container-fluid col-12 mt-5 rounded hover">
+    <div class="container-fluid col-4 mt-5 rounded hover cadreshadow p-3">
 
 
         <?php
@@ -66,7 +66,7 @@
         <!-- choix de destination-->
         <form action="edit-destination.php" method="get">
             <div class="row">
-                <div class="col-6 center">
+                <div class="col-12 center">
                     <div class="form-group ">
                         <div class="">
                             <label for="usr bg-light">Destination:</label>

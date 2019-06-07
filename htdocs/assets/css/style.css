@@ -191,3 +191,13 @@ btn btn-custom {
 	transition: .1s ease-in-out;
 	transform: scale(1.03);
 }
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+}

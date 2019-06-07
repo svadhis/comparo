@@ -64,7 +64,11 @@
         $destinationsTable = Admin::listDestinationsByOperator($allDestinations, $operator->id());
 
         // Show destinations if editing
-        $destinations = $operator->id() == 'new' ? '' : $destinationsTable;
+        $destinations = $operator->id() == 'new' ? '' : '<div class="col-sm-12 offset-md-2 col-md-5 rounded fondcouleur cadreshadow p-3">
+                                                        ' . $destinationsTable . '
+                                                        </div>';
+
+        $formCol = $operator->id() == 'new' ? 'offset-md-3 col-md-6' : 'col-md-5';
 
         ?>
 
@@ -75,12 +79,12 @@
         <div class="container my-5 ">
             <div class="row">
 
-                <div class="col-sm-12 col-md-5 rounded fondcouleur operatorcards p-3">
+                <div class="col-sm-12 <?= $formCol ?> rounded fondcouleur operatorcards p-3">
 
 
                     <form action="edit-operator.php" method="get">
                         <div class="form-group">
-                            <label for="usr">Name Opérateur:</label>
+                            <label for="usr">Nom :</label>
                             <input type="text" class="form-control" id="usr" name="name" <?= $inputData ?>="<?= $operator->name() ?>">
 
                             <div class="premium mt-4">
@@ -114,9 +118,9 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-sm-12 offset-md-2 col-md-5 rounded fondcouleur p-3">
-                    <?= $destinations ?>
-                </div>
+
+                <?= $destinations ?>
+
             </div>
             <!-- bouton-->
             <!-- <button type="button" class="btn btn-primary active">Ajouter</button> -->

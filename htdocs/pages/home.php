@@ -39,7 +39,7 @@
 
 
         <div class="box">
-            <h1>Decouvrez le monde</h1>
+            <h1>Découvrez le monde</h1>
         </div>
 
         <!-- fin animation----------------------------------------------------------------------->
@@ -50,8 +50,8 @@
         <div class="trouvez">
             <div class="card-block hover">
 
-                <h4 class="massive text-center mt-4"> Trouvez votre séjour idéal <br><span class="text-danger"> et</span><br>
-                    comparer les prix de différents sites web.</h4>
+                <h4 class="massive text-center mt-4"><b> Trouvez votre séjour idéal <br><span class="text-danger"> et</span><br>
+                        comparer les prix de différents sites web.</b></h4>
 
                 <!--formulaire-->
                 <div class="row formulaire selectiondestination mt-4">
@@ -68,16 +68,12 @@
                 </div>
             </div>
 
-
-
         </div>
     </div>
 
-
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="footer p-3">
+        Emilie & Nico - Simplon
+    </div>
 
     <!-----div de droite---------------------------------->
 

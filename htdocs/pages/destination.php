@@ -21,11 +21,7 @@
 
         ?>
 
-        <div class="gris-clair">
-
-            <?php Ifc::setDestinationsPage(); ?>
-
-        </div>
+        <?php Ifc::setDestinationsPage(); ?>
 
     </div>
 

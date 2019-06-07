@@ -120,7 +120,7 @@ class Ifc
 
     public static function setDestinationTitle($locationName)
     {
-        $title = '<h3 class="text-center my-3">' . $locationName . '</h3>';
+        $title = '<h3 class="text-center my-3"><b>' . $locationName . '</b></h3>';
 
         return $title;
     }

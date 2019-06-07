@@ -54,7 +54,7 @@
 
     <!-- formulaire container-->
 
-    <div class="container my-5 rounded fondcouleur">
+    <div class="container my-5 rounded fondcouleur cadreshadow">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 tableau administateur mt-4">
                 <div class="formulaire">
