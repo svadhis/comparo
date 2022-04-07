@@ -7,7 +7,8 @@ class Manager
     public static function setDb($host, $name, $user = 'root', $password = '')
     {
         try {
-            self::$db = new PDO('mysql:host=' . $host . ';dbname=' . $name . ';charset=utf8', $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+            $dbPath = __DIR__ . '/../../data.sqlite';
+            self::$db = new PDO('sqlite:' . $dbPath);
         } catch (Exception $e) {
             die('Erreur : ' . $e->getMessage());
         }

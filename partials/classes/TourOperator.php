@@ -56,7 +56,7 @@ class TourOperator
         return $this->isPremium;
     }
 
-    public function setId(int $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
